@@ -2,7 +2,7 @@
   "name": "class-engagement",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://thinnaphats.github.io/class-engagement",
+  "homepage": "https://thinnaphats.github.io/class-engagement",
   "dependencies": {
     "@tensorflow/tfjs": "^3.1.0",
     "@testing-library/jest-dom": "^5.11.4",
