@@ -1,34 +1,23 @@
-![Web Bootstrap header](assets/header.jpg)
+**Class Engagement** - A web application that detects faces and expressions based on machine learning. 
+It is to classify the pictures and make predictions. Web Bootstrap takes the machine learning model created in **[Lobe](https://lobe.ai/)**, 
+and adds it to a project in the browser that uses **[React](https://reactjs.org/)**, **[Create React App](https://github.com/facebook/create-react-app)**, 
+**[TypeScript](https://www.typescriptlang.org/)**, and **[TensorFlow.js](https://www.tensorflow.org/js)**.
 
-[Lobe](http://lobe.ai/) is a free, easy to use app that has everything you need to bring your machine learning ideas to life.
-Web Bootstrap takes the machine learning model created in Lobe, and adds it to a project in the browser that uses
-[React](https://reactjs.org), [Create React App](https://github.com/facebook/create-react-app), [TypeScript](https://www.typescriptlang.org/), and [TensorFlow.js](https://www.tensorflow.org/js).
+# Class-Engagement
 
-## Get Started
+**Developed by** Mr.THINNAPHAT SODANAT, Code. 613040490-0, Computer Engineering, Khon Kaen University.
 
-1. Clone or download the project on your computer and install [Yarn](https://yarnpkg.com/). Yarn is the software package that will install all the dependencies and make sure the code automatically reloads when changes are made.
+## How to run Class-Engagement on your computer (local server)
+1. You need to clone or download this project on your computer. 
+2. You need to install **[yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable)** - to start the React app or start the local server.
+3. In your project's folder, use command **"yarn start"** or **"npm start"** to start the local server and redirect to Class-Engagement.
 
-2. Run `yarn install` to install required dependencies and run `yarn start` to start the server in development mode. This will open a web browser to
-`localhost:3000`. By default, this project is using the TensorFlow.js exported model from Lobe found in the `public/model/` folder.
+## About the project
+**1. Train model**
+- Use more than 400+ pictures for each expressions(Happy, Sad and Neutral).
+- Use model in Lobe(ResNet-50V2) optimize for accuracy.
+- Split data at 80/20
 
-3. To use your own model file, open your Lobe project, go to the Use tab, select Export, and click on the TensorFlow.js model file. 
-When exported, drag the `model.json`, `signature.json`, and all the `*.bin` files to the `public/model/` folder.
-
-## Additional Information
-
-Check out the [Create React App documentation](https://create-react-app.dev/docs/getting-started)
-for more information on React and the project structure.
-
-There are two main components: the Camera and the Prediction. The Camera, which runs in `components/camera/Camera.tsx` is responsible for displaying a live full screen view of the user's selected webcam. The Prediction component `components/prediction/Prediction.tsx` is the box in the lower left hand corner, and is responsible for displaying the top prediction results and their confidences.
-
-### Known Issues
-TensorFlow.js on Safari may have problems initializing the WebGL backend for acceleration and will fall back to the CPU.
-You can use the WebAssembly (wasm) backend as an alternative to WebGL: 
-https://www.tensorflow.org/js/guide/platform_environment#wasm_backend
-
-## Contributing
-
-GitHub Issues are for reporting bugs, discussing features and general feedback on the Web Bootstrap project. Be sure to check our documentation, FAQ and past issues before opening any new ones.
-
-To share your project, get feedback on it, and learn more about Lobe, please visit our community on [Reddit](https://www.reddit.com/r/Lobe/). 
-We look forward to seeing the amazing projects that can be built, when machine learning is made accessible to you.
+**2. Test model**
+- 92% of images are predicted correctly.
+- 8% are incorrectly.
