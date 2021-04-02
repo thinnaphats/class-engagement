@@ -8,7 +8,7 @@ and adds it to a project in the browser that uses **[React](https://reactjs.org/
 **Developed by** Mr.THINNAPHAT SODANAT, Code. 613040490-0, Computer Engineering, Khon Kaen University.
 
 ## How to run Class-Engagement on your computer (local server)
-1. You need to clone or download this project on your computer. 
+1. You need to download this project on your computer. **(make sure you download from branch Master)**
 2. You need to install **[Node.js](https://nodejs.org/en/)** - to start the React app or start the local server.
 3. In your project's folder, use command **"npm install"** and then use command **"npm start"** to start the local server and redirect to Class-Engagement.
 
